@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700;1,800&family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    background-color: #ffff;
+    height: 50vh;
+    width: 50vw;
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+}
+
+.user-input{
+    height: 15vh;
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    color: #7A7A7A;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    margin: 1em;
+}
+
+input{
+    height: 50px;
+    width: 90px;
+    margin: .5em;
+    border-color: #7A7A7A;
+    border-radius: 5px;
+    border-width: .5px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-left: .5em;
+}
+
+::placeholder{
+    font-weight: bold;
+    font-size: 1.3rem;
+    
+}
+
+hr{
+    border-color: #5f5f6013;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+button{
+    background: #854CFB;
+  background-image: -webkit-linear-gradient(top, #854CFB, #854CFB);
+  background-image: -moz-linear-gradient(top, #854CFB, #854CFB);
+  background-image: -ms-linear-gradient(top, #854CFB, #854CFB);
+  background-image: -o-linear-gradient(top, #854CFB, #854CFB);
+  background-image: linear-gradient(to bottom, #854CFB, #854CFB);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container-result{
+    height: 30vh;
+    font-size: 1.8rem;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1em;
+}
+
+span{
+    color: #854BFB;
+}
+
+/* mobile side */
+
+@media (max-width: 1000px) {
+
+    .container-result{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: 300px;
+    }
+
+    .form{
+        position: relative;
+    }
+    .user-input{
+        width: auto;
+        height: auto;
+
+    }
+
+    input{
+        height: 50px;
+        width: 63px;
+    }
+    ::placeholder{
+        text-align: left;
+    }
+
+    .submit{
+        position: absolute;
+        right: 45%;
+        top: 25%;
+    }
+  }
+
+
+  @media (max-width: 715px) {
+
+    /* *{
+        background-color: blue;
+    } */
+
+    h1{
+        font-size: 2.2rem;
+    }
+
+    .container-result{
+        height: 220px;
+        width: 200px;
+    }
+
+    input{
+        width: 50px;
+    }
+
+    ::placeholder{
+        text-align: left;
+        font-size: 1rem;
+    }
+    .form{
+        position: relative;
+    }
+
+    .submit{
+        position: absolute;
+        right: 30%;
+        top: 25%;
+    }
+
+  }
